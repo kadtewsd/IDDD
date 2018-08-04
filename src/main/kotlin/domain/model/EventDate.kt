@@ -1,4 +1,4 @@
-package domain.model.billing
+package domain.model
 
 import java.time.LocalDateTime
 
