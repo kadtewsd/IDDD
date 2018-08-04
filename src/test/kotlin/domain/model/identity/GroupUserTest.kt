@@ -1,6 +1,8 @@
-import org.junit.jupiter.api.Assertions.assertFalse
-import org.junit.jupiter.api.Assertions.assertTrue
-import org.junit.jupiter.api.Test
+package domain.model.identity
+
+import junit.framework.TestCase.assertFalse
+import org.junit.Assert.assertTrue
+import org.junit.Test
 
 class GroupUserTest {
     @Test

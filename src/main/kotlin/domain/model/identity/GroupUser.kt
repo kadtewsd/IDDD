@@ -1,3 +1,5 @@
+package domain.model.identity
+
 enum class GroupUser {
     Group {
         override fun isGroup(): Boolean {
