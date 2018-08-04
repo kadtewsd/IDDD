@@ -16,7 +16,7 @@ class PurchaseStartSubscriber : DomainEventSubscriber {
                 .balanceService()
                 .doBilling(
                         billingEvent.identities.accountNumber,
-                        billingEvent.money)
+                        billingEvent.money.value)
     }
 
     override fun subScribedToEventType(): Class<*> {
