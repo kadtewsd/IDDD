@@ -10,9 +10,9 @@ class BalanceService {
     val repository: AccountRepository = AccountRepositoryImpl()
     val cashing = Cashing()
 
-    fun doBilling(accountNumber: String, money: Money) {
+    fun doBilling(accountNumber: String, money: Int) {
         val account = repository.findByAccountNo(accountNumber)
-        val cashed = cashing.chargeTo(account, money)
+        val cashed = cashing.chargeTo(account, Money(money))
         repository.save(cashed)
 
     }
